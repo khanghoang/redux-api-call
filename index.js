@@ -284,7 +284,7 @@ var defaultAdapter = (function (_ref) {
   return fetch(endpoint, others);
 });
 
-var CALL_API = Symbol('CALL_API');
+var CALL_API = Symbol.for('CALL_API');
 var REDUCER_PATH = 'api_calls';
 var ACTION_FETCH_START = '@@api/FETCH_START';
 var ACTION_FETCH_COMPLETE = '@@api/FETCH_COMPLETE';
